@@ -15,3 +15,7 @@ This Clover EFI works with Catalina and future versions of MacOS
 
 ## BIOS Config
 
+## What does not work
+
+- WiFI
+- Bluetooh
