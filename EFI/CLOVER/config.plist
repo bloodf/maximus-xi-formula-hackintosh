@@ -4,55 +4,71 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<true/>
+			</dict>
+			<key>PluginType</key>
+			<integer>1</integer>
+		</dict>
 		<key>DSDT</key>
 		<dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Find</key>
+					<data>RUMwXw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>Rename EC0 to EC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>oAqTU1RBUwE=</data>
+					<key>Replace</key>
+					<data>oAqRCv8L//8=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>BIOS DSDT Device(RTC) bug</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>DSDT.aml</string>
 			<key>Fixes</key>
 			<dict>
 				<key>FixHPET</key>
 				<true/>
-				<key>FixIPIC</key>
-				<true/>
 				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
-				<true/>
-				<key>FixS3D</key>
-				<true/>
-				<key>FixSBUS</key>
-				<true/>
-				<key>FixShutdown</key>
 				<true/>
 				<key>FixTMR</key>
 				<true/>
 				<key>FixWAK</key>
 				<true/>
+				<key>FixSBUS</key>
+				<true/>
+				<key>FixShutdown</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixS3D</key>
+				<true/>
+				<key>FixRegions</key>
+				<true/>
 			</dict>
-			<key>Name</key>
-			<string>DSDT.aml</string>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>Rename EC0 to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>RUMwXw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>BIOS DSDT Device(RTC) bug</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>oAqTU1RBUwE=</data>
-					<key>Replace</key>
-					<data>oAqRCv8L//8=</data>
-				</dict>
-			</array>
 		</dict>
+		<key>HaltEnabler</key>
+		<true/>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -64,110 +80,128 @@
 				<string>LPIT</string>
 			</dict>
 			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
 				<key>TableId</key>
 				<string>SataTabl</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>CpuSsdt</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>ApIst</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>Cpu0Cst</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>ApCst</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>Cpu0Hwp</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>ApHwp</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>HwpLvt</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>sensrhub</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>PtidDevc</string>
+				<key>Signature</key>
+				<string>SSDT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>
-		<key>HaltEnabler</key>
-		<true/>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
-			<false/>
-			<key>Generate</key>
-			<dict>
-				<key>CStates</key>
-				<true/>
-				<key>PStates</key>
-				<true/>
-			</dict>
-			<key>PluginType</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>igfxfw=2</string>
-		<key>DefaultVolume</key>
-		<string>macOS</string>
+		<key>Secure</key>
+		<false/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverHibernate</key>
 		<true/>
-		<key>Secure</key>
-		<false/>
-		<key>Timeout</key>
-		<integer>5</integer>
+		<key>Arguments</key>
+		<string>igfxfw=2 alcid=1</string>
 		<key>XMPDetection</key>
 		<integer>1</integer>
+		<key>Timeout</key>
+		<integer>-1</integer>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Theme</key>
+		<string>ROGNeon</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Speed</key>
+			<integer>8</integer>
+			<key>Enabled</key>
+			<true/>
+		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+		</array>
+		<key>Language</key>
+		<string>en:0</string>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>USB</key>
+		<dict>
+			<key>FixOwnership</key>
+			<true/>
+			<key>Inject</key>
+			<false/>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -181,41 +215,6 @@
 				<data>AwCYPg==</data>
 			</dict>
 		</dict>
-		<key>USB</key>
-		<dict>
-			<key>FixOwnership</key>
-			<true/>
-			<key>Inject</key>
-			<false/>
-		</dict>
-	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
-		</array>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<true/>
-			<key>Speed</key>
-			<integer>8</integer>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
-		<key>Theme</key>
-		<string>Classical</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -233,137 +232,161 @@
 	<dict>
 		<key>AppleIntelCPUPM</key>
 		<true/>
-		<key>AppleRTC</key>
-		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>AppleRTC</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>MaskReplace</key>
+				<data></data>
+				<key>Find</key>
+				<data>AA==</data>
+				<key>MaskFind</key>
+				<data>AA==</data>
 				<key>Comment</key>
-				<string>Make all drives to be internal</string>
+				<string>Disable RTC wake scheduling</string>
+				<key>RangeFind</key>
+				<integer>1</integer>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>RXh0ZXJuYWw=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>Procedure</key>
+				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Replace</key>
+				<data>ww==</data>
+				<key>MatchOS</key>
+				<string>10.15</string>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>RXh0ZXJuYWw=</data>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>SW50ZXJuYWw=</data>
+				<key>Disabled</key>
+				<false/>
+				<key>Comment</key>
+				<string>Make all drives to be internal</string>
+				<key>InfoPlistPatch</key>
+				<false/>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g32IDw+DpwQ=</data>
 				<key>Comment</key>
 				<string>USB 3.0 limit High Sierra 10.13.6</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g32IDw+DpwQ=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g32IHw+DpwQ=</data>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB port limit patch #1 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g+MP0w==</data>
 				<key>Comment</key>
 				<string>USB port limit patch #2 10.14.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g+M/0w==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB Port limit patch #3 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/8PDw==</data>
 				<key>Comment</key>
 				<string>USB Port limit patch #4 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/8PDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/8/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB Port Limit Patch #1 PMHeart/DalianSky</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/kPDw==</data>
 				<key>Comment</key>
 				<string>USB Port Limit Patch #2 PMHeart/DalianSky</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
@@ -371,72 +394,207 @@
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>BooterConfig</key>
-		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
 		<string>C02436602U5FW29A</string>
 		<key>ROM</key>
 		<data>QoLEE32+</data>
+		<key>BooterConfig</key>
+		<string>0x28</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>04/23/2020</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>IM191.88Z.F000.B00.2004232100</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFD8FF576</string>
 		<key>Board-ID</key>
 		<string>Mac-AA95B1DDAB278B95</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02902609GULNV91M</string>
-		<key>BoardType</key>
-		<integer>10</integer>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFFDFFF7F</string>
 		<key>BoardVersion</key>
 		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
-		<key>ChassisManufacturer</key>
+		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
-		<key>EfiVersion</key>
-		<string>1037.120.79.0.0</string>
+		<key>BiosVersion</key>
+		<string>IM191.88Z.F000.B00.2006151939</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisAssetTag</key>
+		<string>iMac-Aluminum</string>
+		<key>PlatformFeature</key>
+		<string>0x20</string>
 		<key>Family</key>
 		<string>iMac</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFD8FF576</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFFDFFF7F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
+		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<false/>
-		<key>PlatformFeature</key>
-		<string>0x22</string>
+		<key>BoardSerialNumber</key>
+		<string>C02023405GULNV91F</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
 		<key>ProductName</key>
 		<string>iMac19,1</string>
-		<key>SerialNumber</key>
-		<string>C02Y3XZPJV3Q</string>
 		<key>SmUUID</key>
-		<string>F1EB69F0-B219-4066-8DDA-FDF40496EC0B</string>
+		<string>7DDC3C2E-3326-4EF5-A139-0E4F0275FD6A</string>
+		<key>Mobile</key>
+		<false/>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>EfiVersion</key>
+		<string>1037.140.50.0.0</string>
+		<key>Memory</key>
+		<dict>
+			<key>Modules</key>
+			<array>
+				<dict>
+					<key>Vendor</key>
+					<string>Corsair</string>
+					<key>Serial</key>
+					<string>201401906</string>
+					<key>Part</key>
+					<string>CMW32GX4M2C3200C16</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Frequency</key>
+					<integer>3200</integer>
+					<key>Slot</key>
+					<integer>0</integer>
+					<key>Type</key>
+					<string>DDR4</string>
+				</dict>
+				<dict>
+					<key>Vendor</key>
+					<string>Corsair</string>
+					<key>Serial</key>
+					<string>201401906</string>
+					<key>Part</key>
+					<string>CMW32GX4M2C3200C16</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Frequency</key>
+					<integer>3200</integer>
+					<key>Slot</key>
+					<integer>1</integer>
+					<key>Type</key>
+					<string>DDR4</string>
+				</dict>
+				<dict>
+					<key>Vendor</key>
+					<string>Corsair</string>
+					<key>Serial</key>
+					<string>201507259</string>
+					<key>Part</key>
+					<string>CMW32GX4M2C3200C16</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Frequency</key>
+					<integer>3200</integer>
+					<key>Slot</key>
+					<integer>2</integer>
+					<key>Type</key>
+					<string>DDR4</string>
+				</dict>
+				<dict>
+					<key>Vendor</key>
+					<string>Corsair</string>
+					<key>Serial</key>
+					<string>201507259</string>
+					<key>Part</key>
+					<string>CMW32GX4M2C3200C16</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Frequency</key>
+					<integer>3200</integer>
+					<key>Slot</key>
+					<integer>3</integer>
+					<key>Type</key>
+					<string>DDR4</string>
+				</dict>
+			</array>
+		</dict>
+		<key>SerialNumber</key>
+		<string>C02CTKYQJV3Q</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>BiosReleaseDate</key>
+		<string>06/15/2020</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>493EAB1D-7BD8-5DB9-ADB5-7C744E17E2C5</string>
-		<key>InjectKexts</key>
-		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
+		<key>CustomUUID</key>
+		<string>6ED3FEF4-405F-58FA-B4DC-CE962490745A</string>
+		<key>InjectKexts</key>
+		<string>Detect</string>
+	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>RebuildAppleMemoryMap</key>
+		<false/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>DisableSingleUser</key>
+		<false/>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>SignalAppleOS</key>
+		<false/>
+		<key>DisableVariableWrite</key>
+		<false/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>DisableRtcChecksum</key>
+		<false/>
+		<key>DiscardHibernateMap</key>
+		<false/>
+		<key>DevirtualiseMmio</key>
+		<false/>
+		<key>KernelCache</key>
+		<string>Auto</string>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<false/>
+		<key>ForceExitBootServices</key>
+		<false/>
+		<key>AppleXcpmForceBoost</key>
+		<false/>
+		<key>FuzzyMatch</key>
+		<true/>
+		<key>DisableIoMapper</key>
+		<true/>
+		<key>ProtectSecureBoot</key>
+		<false/>
+		<key>PowerTimeoutKernelPanic</key>
+		<true/>
+		<key>ProvideConsoleGopEnable</key>
+		<true/>
+		<key>ProtectUefiServices</key>
+		<false/>
+		<key>ProtectMemoryRegions</key>
+		<false/>
+		<key>DummyPowerManagement</key>
+		<false/>
+		<key>AppleXcpmExtraMsrs</key>
+		<false/>
+		<key>IncreasePciBarSize</key>
+		<false/>
+		<key>ProvideMaxSlide</key>
+		<integer>0</integer>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>ThirdPartyDrives</key>
+		<true/>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>ExternalDiskIcons</key>
+		<false/>
+		<key>XhciPortLimit</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
