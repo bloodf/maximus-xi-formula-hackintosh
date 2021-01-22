@@ -11,26 +11,29 @@
 			<key>Background</key>
 			<dict>
 				<key>Path</key>
-				<string>background.png</string>
-				<key>Type</key>
-				<string>Tile</string>
+				<string>Background.png</string>
 				<key>Sharp</key>
 				<string>0xFF</string>
-				<key>Dark</key>
-				<false/>
+				<key>Type</key>
+				<string>Crop</string>
 			</dict>
 			<key>Badges</key>
 			<dict>
 				<key>Inline</key>
 				<false/>
+				<key>OffsetX</key>
+				<integer>0</integer>
+				<key>OffsetY</key>
+				<integer>0</integer>
+				<key>Scale</key>
+				<integer>16</integer>
 				<key>Show</key>
 				<true/>
 				<key>Swap</key>
 				<true/>
 			</dict>
 			<key>Banner</key>
-			<string>logo.png</string>
-			<key>BootCampStyle</key>
+			<string>Logo.png</string>
 			<key>Font</key>
 			<dict>
 				<key>CharWidth</key>
@@ -48,19 +51,6 @@
 				<string>0xFFFFFF80</string>
 				<key>Small</key>
 				<string>selection_small.png</string>
-			</dict>
-			<key>Components</key>
-			<dict>
-				<key>Banner</key>
-				<false/>
-				<key>Functions</key>
-				<true/>
-				<key>Label</key>
-				<true/>
-				<key>Revision</key>
-				<false/>
-				<key>MenuTitle</key>
-				<true/>
 			</dict>
 		</dict>
 		<key>Year</key>
