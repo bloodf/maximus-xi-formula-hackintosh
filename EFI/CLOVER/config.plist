@@ -37,9 +37,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUMwXw==</data>
+					<data>
+					RUMwXw==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -47,9 +51,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>oAqTU1RBUwE=</data>
+					<data>
+					oAqTU1RBUwE=
+					</data>
 					<key>Replace</key>
-					<data>oAqRCv8L//8=</data>
+					<data>
+					oAqRCv8L//8=
+					</data>
 				</dict>
 			</array>
 		</dict>
@@ -166,6 +174,8 @@
 		<key>XMPDetection</key>
 		<integer>1</integer>
 	</dict>
+	<key>CPU</key>
+	<dict/>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
@@ -178,7 +188,9 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwCYPg==</data>
+				<data>
+				AwCYPg==
+				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -209,6 +221,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>ROGNeon</string>
 	</dict>
@@ -240,13 +254,15 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AA==</data>
+				<data>
+				AA==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MaskFind</key>
-				<data>AA==</data>
-				<key>MaskReplace</key>
-				<data></data>
+				<data>
+				AA==
+				</data>
 				<key>MatchOS</key>
 				<string>10.15</string>
 				<key>Name</key>
@@ -256,7 +272,9 @@
 				<key>RangeFind</key>
 				<integer>1</integer>
 				<key>Replace</key>
-				<data>ww==</data>
+				<data>
+				ww==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -264,13 +282,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>RXh0ZXJuYWw=</data>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>SW50ZXJuYWw=</data>
+				<data>
+				SW50ZXJuYWw=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -278,7 +300,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g32IDw+DpwQ=</data>
+				<data>
+				g32IDw+DpwQ=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -286,7 +310,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g32IHw+DpwQ=</data>
+				<data>
+				g32IHw+DpwQ=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -294,7 +320,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>
+				g/sPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -302,7 +330,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
+				<data>
+				g/s/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -310,7 +340,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g+MP0w==</data>
+				<data>
+				g+MP0w==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -318,7 +350,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>g+M/0w==</data>
+				<data>
+				g+M/0w==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -326,7 +360,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>
+				g/sPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -334,7 +370,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
+				<data>
+				g/s/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -342,7 +380,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/8PDw==</data>
+				<data>
+				g/8PDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -350,7 +390,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/8/Dw==</data>
+				<data>
+				g/8/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -358,7 +400,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>
+				g/sPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -366,7 +410,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
+				<data>
+				g/s/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -374,7 +420,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/kPDw==</data>
+				<data>
+				g/kPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -382,7 +430,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/k/Dw==</data>
+				<data>
+				g/k/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -390,7 +440,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP+Dw8=</data>
+				<data>
+				QYP+Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -398,7 +450,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>QYP+Pw8=</data>
+				<data>
+				QYP+Pw8=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -406,7 +460,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP9Dw8=</data>
+				<data>
+				QYP9Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -414,7 +470,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>QYP9Pw8=</data>
+				<data>
+				QYP9Pw8=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -422,7 +480,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP+Dw8=</data>
+				<data>
+				QYP+Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -430,7 +490,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>QYP+Pw8=</data>
+				<data>
+				QYP+Pw8=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -438,7 +500,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP9Dw8=</data>
+				<data>
+				QYP9Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -446,7 +510,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>QYP9Pw8=</data>
+				<data>
+				QYP9Pw8=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -454,7 +520,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP+Dw8=</data>
+				<data>
+				QYP+Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -462,7 +530,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>QYP+Pw8=</data>
+				<data>
+				QYP+Pw8=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -470,7 +540,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>QYP9Dw8=</data>
+				<data>
+				QYP9Dw8=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -478,7 +550,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>QYP9Pw8=</data>
+				<data>
+				QYP9Pw8=
+				</data>
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
@@ -554,7 +628,9 @@
 		<key>MLB</key>
 		<string>C02436602U5FW29A</string>
 		<key>ROM</key>
-		<data>QoLEE32+</data>
+		<data>
+		QoLEE32+
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -679,10 +755,6 @@
 	<dict>
 		<key>CustomUUID</key>
 		<string>6ED3FEF4-405F-58FA-B4DC-CE962490745A</string>
-		<key>ExposeSysVariables</key>
-		<true/>
-		<key>InjectKexts</key>
-		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NoCaches</key>

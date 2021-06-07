@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Thu Jan  7 12:27:23 -03 2021
-Installer version: r5128 (commit: a9778cd8d) EFI bootloader
+Clover EFI installer log - Fri May 21 11:47:56 -03 2021
+Installer version: r5135 (commit: 8da3efae1) EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -20,11 +20,12 @@ Installer version: r5128 (commit: a9778cd8d) EFI bootloader
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.6 GB   disk2
                                  Physical Store disk1s2
-   1:                APFS Volume ⁨MacOS - Data⁩            314.6 GB   disk2s1
-   2:                APFS Volume ⁨MacOS⁩                   15.5 GB    disk2s2
-   3:                APFS Volume ⁨Preboot⁩                 209.7 MB   disk2s3
-   4:                APFS Volume ⁨Recovery⁩                652.3 MB   disk2s4
-   5:                APFS Volume ⁨VM⁩                      1.1 MB     disk2s5
+   1:                APFS Volume ⁨MacOS - Data⁩            326.7 GB   disk2s1
+   2:                APFS Volume ⁨MacOS⁩                   15.3 GB    disk2s2
+   3:              APFS Snapshot ⁨com.apple.os.update-...⁩ 15.3 GB    disk2s2s1
+   4:                APFS Volume ⁨Preboot⁩                 479.1 MB   disk2s3
+   5:                APFS Volume ⁨Recovery⁩                622.1 MB   disk2s4
+   6:                APFS Volume ⁨VM⁩                      1.1 MB     disk2s5
 
 /dev/disk3 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -37,11 +38,10 @@ Installer version: r5128 (commit: a9778cd8d) EFI bootloader
    1:       Microsoft Basic Data ⁨Yavimaya⁩                3.0 TB     disk4s1
 
 Target volume /Volumes/MacOS on disk2 is APFS on physical store disk1s2
-Executing: /usr/bin/kmutil load -p /System/Library/Extensions/msdosfs.kext
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/MacOS/Private/tmp/EFIROOTDIR/EFI folder to /Volumes/MacOS//Users/heitor/Clover EFI Backups/r5127/2021-01-07-12h27/EFI
+Backing up /Volumes/MacOS/Private/tmp/EFIROOTDIR/EFI folder to /Volumes/MacOS//Users/heitor/Clover EFI Backups/r5135/2021-05-21-11h47/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
